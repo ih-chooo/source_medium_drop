@@ -10,6 +10,7 @@
 /* 기본 스타일 - 사용자님 코드 유지 */
 body { font-family: sans-serif; padding: 20px; font-size: 14px; }
 .dv1, .dv2, .dv3 { margin-bottom: 20px; }
+.button-box{ display: inline-block;}
 .button-container { margin-bottom: 20px; } 
 .button-container button { padding: 10px 15px; font-size: 1em; cursor: pointer; background-color: #007bff; color: white; border: none; border-radius: 5px; }
 .button-container button:hover { background-color: #0056b3; }
@@ -48,12 +49,14 @@ legend { font-weight: bold; }
 
 <div class="dv1">
 <div class="dv2">
-    <div class="button-container">
-        <button onclick="location.href='https://ih-chooo.github.io/utm_key_value_list/'">UTM 옵션 목록</button>
+    <div class="button-box">
+        <div class="button-container">
+            <button onclick="location.href='https://ih-chooo.github.io/utm_key_value_list/'">UTM 옵션 목록</button>
         </div>
         <div class="button-container">
             <button onclick="location.href='https://ih-chooo.github.io/utmHistory/'">UTM 생성 이력</button>
         </div>
+    </div>
     <h1>UTM 링크 생성</h1>
     <table border="1" cellpadding="5" style="width:100%; border-collapse: collapse;">
         <thead><tr><th colspan="2">UTM 네이밍 규칙</th></tr></thead>
